@@ -1,3 +1,10 @@
+# Git Exercises
+
+## Bundle 1
+
+### Exercise 1
+
+``` bash
 git init
 Initialized empty Git repository in C:/Users/SICHA/Desktop/Gym/.git/
 git branch -a
@@ -37,3 +44,4 @@ git branch test
 
 git branch -d test
 Deleted branch test (was 1e5903b).
+```
