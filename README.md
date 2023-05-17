@@ -269,4 +269,94 @@ To https://github.com/niyobern/Gym-Git-Exercise-Solution
    db29df2..c0d2165  main -> main
 C:\Users\bernard\documents\Gym\git>
 
+## Bundle 3
+
+### Exercise 1
+
+C:\Users\bernard\documents\Gym\git>git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+C:\Users\bernard\documents\Gym\git>git add . && git commit -m "new team page"
+[ft/team-page 3270382] new team page
+ 1 file changed, 10 insertions(+)
+ create mode 100644 team.html
+C:\Users\bernard\documents\Gym\git>git push origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 353 bytes | 70.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/niyobern/Gym-Git-Exercise-Solution/pull/new/ft/team-page
+remote:
+To https://github.com/niyobern/Gym-Git-Exercise-Solution
+ * [new branch]      ft/team-page -> ft/team-page
+C:\Users\bernard\documents\Gym\git>checkout main
+'checkout' is not recognized as an internal or external command,
+operable program or batch file.
+C:\Users\bernard\documents\Gym\git>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+C:\Users\bernard\documents\Gym\git>git branch ft/contact-page
+C:\Users\bernard\documents\Gym\git>git checkout ft/team-page
+Switched to branch 'ft/team-page'
+C:\Users\bernard\documents\Gym\git>git>git log
+commit 32703827ead060eabe055f44907b357cc6e85ba4 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: niyobern <niyobern@outlook.com>
+Date:   Wed May 17 04:26:41 2023 +0200
+
+    new team page
+...
+C:\Users\bernard\documents\Gym\git>git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+C:\Users\bernard\documents\Gym\git>git cherry-pick 32703827ead060eabe055f44907b357cc6e85ba4
+[ft/contact-page f9549c5] new team page
+ Date: Wed May 17 04:26:41 2023 +0200
+ 1 file changed, 10 insertions(+)
+ create mode 100644 team.html
+C:\Users\bernard\documents\Gym\git>git push origin ft/contact-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 357 bytes | 59.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/niyobern/Gym-Git-Exercise-Solution/pull/new/ft/contact-page
+remote:
+To https://github.com/niyobern/Gym-Git-Exercise-Solution
+ * [new branch]      ft/contact-page -> ft/contact-page
+C:\Users\bernard\documents\Gym\git>git branch ft/faq-page
+C:\Users\bernard\documents\Gym\git>git add . && git commit -m "new faq"
+[ft/contact-page b350730] new faq
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+C:\Users\bernard\documents\Gym\git>git push origin ft/faq-page
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/niyobern/Gym-Git-Exercise-Solution/pull/new/ft/faq-page
+remote:
+To https://github.com/niyobern/Gym-Git-Exercise-Solution
+ * [new branch]      ft/faq-page -> ft/faq-page
+C:\Users\bernard\documents\Gym\git>git revert 32703827ead060eabe055f44907b357cc6e85ba4
+[ft/team-page 3d33665] Revert "new team page"
+ 1 file changed, 10 deletions(-)
+ delete mode 100644 team.html
+C:\Users\bernard\documents\Gym\git>git push origin ft/team-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 245 bytes | 35.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/niyobern/Gym-Git-Exercise-Solution
+   3270382..3d33665  ft/team-page -> ft/team-page
+C:\Users\bernard\documents\Gym\git>
+
 ```
