@@ -153,8 +153,49 @@ C:\Users\bernard\documents\Gym\git>git branch
 C:\Users\bernard\documents\Gym\git>git branch -d list
 Deleted branch list (was 8a9d2c4).
 
-C:\Users\bernard\documents\Gym\git>git branch ft/bundle-2
+## Bundle 2
 
+### Exercise 1
+
+C:\Users\bernard\documents\Gym\git>git branch ft/bundle-2
+C:\Users\bernard\documents\Gym\git>git switch ft/bundle-2
+C:\Users\bernard\documents\Gym\git>git add .
+C:\Users\bernard\documents\Gym\git>git commit -m "adding the services.html"
+[ft/bundle-2 6608c47] adding the services.html
+ 1 file changed, 10 insertions(+)
+ create mode 100644 services.html
+C:\Users\bernard\documents\Gym\git>git push origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 367 bytes | 52.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/niyobern/Gym-Git-Exercise-Solution/pull/new/ft/bundle-2
+remote:
+To https://github.com/niyobern/Gym-Git-Exercise-Solution
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+C:\Users\bernard\documents\Gym\git>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+C:\Users\bernard\documents\Gym\git>git merge ft/bundle-2
+Merge made by the 'ort' strategy.
+ services.htm | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+ create mode 100644 services.html
+C:\Users\bernard\documents\Gym\git>git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 300 bytes | 60.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/niyobern/Gym-Git-Exercise-Solution
+   f02d565..edbb869  main -> main
 C:\Users\bernard\documents\Gym\git>
 
 ```
