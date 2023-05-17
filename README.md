@@ -44,10 +44,11 @@ git branch test
 
 git branch -d test
 Deleted branch test (was 1e5903b).
-
+```
 
 ### Exercises 2
 
+``` bash
 C:\Users\bernard\documents\Gym\git>git status
 On branch main
 Your branch is up to date with 'origin/main'.
@@ -152,11 +153,12 @@ C:\Users\bernard\documents\Gym\git>git branch
 
 C:\Users\bernard\documents\Gym\git>git branch -d list
 Deleted branch list (was 8a9d2c4).
-
+```
 ## Bundle 2
 
 ### Exercise 1
 
+``` bash
 C:\Users\bernard\documents\Gym\git>git branch ft/bundle-2
 C:\Users\bernard\documents\Gym\git>git switch ft/bundle-2
 C:\Users\bernard\documents\Gym\git>git add .
@@ -197,8 +199,10 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/niyobern/Gym-Git-Exercise-Solution
    f02d565..edbb869  main -> main
 C:\Users\bernard\documents\Gym\git>
-
+```
 ### Exercise 2
+
+``` bash
 C:\Users\bernard\documents\Gym\git>git checkout main
 Already on 'main'
 Your branch is up to date with 'origin/main'.
@@ -268,11 +272,12 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/niyobern/Gym-Git-Exercise-Solution
    db29df2..c0d2165  main -> main
 C:\Users\bernard\documents\Gym\git>
-
+```
 ## Bundle 3
 
 ### Exercise 1
 
+``` bash
 C:\Users\bernard\documents\Gym\git>git checkout -b ft/team-page
 Switched to a new branch 'ft/team-page'
 C:\Users\bernard\documents\Gym\git>git add . && git commit -m "new team page"
