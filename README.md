@@ -198,4 +198,75 @@ To https://github.com/niyobern/Gym-Git-Exercise-Solution
    f02d565..edbb869  main -> main
 C:\Users\bernard\documents\Gym\git>
 
+### Exercise 2
+C:\Users\bernard\documents\Gym\git>git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+C:\Users\bernard\documents\Gym\git>git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+C:\Users\bernard\documents\Gym\git>git add . && git commit -m "commiting my changes to services.html"
+[ft/service-redesign 637feee] commiting my changes to services.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+C:\Users\bernard\documents\Gym\git>git push origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 320 bytes | 45.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/niyobern/Gym-Git-Exercise-Solution/pull/new/ft/service-redesign
+remote:
+To https://github.com/niyobern/Gym-Git-Exercise-Solution
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+C:\Users\bernard\documents\Gym\git>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+C:\Users\bernard\documents\Gym\git>git add . && git commit -m "adding changes made form the main branch" && git push origin main
+[main db29df2] adding changes made form the main branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 328 bytes | 25.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/niyobern/Gym-Git-Exercise-Solution
+   4c4a50d..db29df2  main -> main
+C:\Users\bernard\documents\Gym\git>git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+C:\Users\bernard\documents\Gym\git>git diff main ft/service-redesign
+diff --git a/services.html b/services.html
+index 74e3527..5d527ad 100644
+--- a/services.html
++++ b/services.html
+@@ -4,7 +4,7 @@
+     </head>
+     <body>
+         <header></header>
+-        <main>Changes to this page from main</main>
++        <main>New Changes to this page</main>
+         <footer></footer>
+     </body>
+ </html>
+\ No newline at end of file
+C:\Users\bernard\documents\Gym\git>git merge main ft/service-redesign
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+C:\Users\bernard\documents\Gym\git>git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 361 bytes | 72.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/niyobern/Gym-Git-Exercise-Solution
+   db29df2..c0d2165  main -> main
+C:\Users\bernard\documents\Gym\git>
+
 ```
