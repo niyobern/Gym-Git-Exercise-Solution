@@ -548,3 +548,47 @@ To https://github.com/niyobern/Gym-Git-Exercise-Solution
 C:\Users\Bernard\Documents\git>
 
 ```
+
+## Bundle 5
+
+### Exercise 1
+
+Link: [https://niyobern.github.io/Gym-Git-Exercise-Solution/](https://niyobern.github.io/Gym-Git-Exercise-Solution/)
+
+### Exercise 2
+
+
+``` bash
+C:\Users\Bernard\Documents\Gym>git clone https://github.com/niyobern/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (3/3), done.
+Receiving objects: 100% (107/107), 1.95 MiB | 920.00 KiB/s, done.eceiving objects:  65% (70/107), 1.33 MiB | 808.00 KiB/s
+
+Resolving deltas: 100% (5/5), done.
+Updating files: 100% (106/106), done.
+
+C:\Users\Bernard\Documents\Gym>cd git-cafe-exercise
+
+C:\Users\Bernard\Documents\Gym\git-cafe-exercise>
+C:\Users\Bernard\Documents\Gym\git-cafe-exercise>git add .
+
+C:\Users\Bernard\Documents\Gym\git-cafe-exercise>git commit -m "changed index.htm"
+[main 3b1abc2] changed index.htm
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Bernard\Documents\Gym\git-cafe-exercise>git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 316 bytes | 45.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/niyobern/git-cafe-exercise.git
+   d1d3f9c..3b1abc2  main -> main
+
+C:\Users\Bernard\Documents\Gym\git-cafe-exercise>
+
+```
