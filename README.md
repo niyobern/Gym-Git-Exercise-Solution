@@ -474,4 +474,77 @@ C:\Users\Bernard\Documents\Gym\git>
 
 ```
 
+### Exercise 2
 
+```bash
+
+C:\Users\Bernard\Documents\git>git checkout -b ft/footer 
+Switched to a new branch 'ft/footer'
+
+C:\Users\Bernard\Documents\git>git add .
+
+C:\Users\Bernard\Documents\git>git commit -m "changes for bundle 4 execise 2"
+[ft/footer e1c7942] changes for bundle 4 execise 2
+ 1 file changed, 1 insertion(+), 1 deletion(-)    
+
+C:\Users\Bernard\Documents\git>git add .
+
+C:\Users\Bernard\Documents\git>git commit -m "other changes"
+[ft/footer f0e66e8] other changes
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\Bernard\Documents\git>git push origin ft/footer
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 609 bytes | 76.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/niyobern/Gym-Git-Exercise-Solution/pull/new/ft/footer
+remote:
+To https://github.com/niyobern/Gym-Git-Exercise-Solution
+ * [new branch]      ft/footer -> ft/footer
+
+C:\Users\Bernard\Documents\git>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\Bernard\Documents\git>git branch ft/squashing
+
+
+C:\Users\Bernard\Documents\git>git checkout ft/squashing
+Switched to branch 'ft/squashing'
+
+C:\Users\Bernard\Documents\git>git merge --squash ft/footer
+Updating c8eaff4..f0e66e8
+Fast-forward
+Squash commit -- not updating HEAD
+ home.html | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\Bernard\Documents\git>git add .                               
+
+C:\Users\Bernard\Documents\git>git commit -m "footer changes squashing"
+[ft/squashing b07c882] footer changes squashing
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\Bernard\Documents\git>git push origin ft/squashing
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 344 bytes | 49.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/niyobern/Gym-Git-Exercise-Solution/pull/new/ft/squashing
+remote:
+To https://github.com/niyobern/Gym-Git-Exercise-Solution
+ * [new branch]      ft/squashing -> ft/squashing
+C:\Users\Bernard\Documents\git>
+
+```
