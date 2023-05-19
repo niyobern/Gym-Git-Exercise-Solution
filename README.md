@@ -428,5 +428,50 @@ C:\Users\Bernard\Documents\Gym\git>
 
 ```
 
+## Bundle 4
+
+### Exercise 1
+
+``` bash
+
+C:\Users\Bernard\Documents\Gym\git>git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\Bernard\Documents\Gym\git>git remote
+origin
+
+C:\Users\Bernard\Documents\Gym\git>git remote add git-copy https://github.com/niyobern/Gym-Git-Exercise-Solution-2.git
+
+C:\Users\Bernard\Documents\Gym\git>git add .
+
+C:\Users\Bernard\Documents\Gym\git>git commit -m "pushing to both remotes"
+[main a8ef400] pushing to both remotes
+ 1 file changed, 1 insertion(+)
+
+
+C:\Users\Bernard\Documents\Gym\git>git push origin main && git push git-copy main 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 307 bytes | 34.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/niyobern/Gym-Git-Exercise-Solution
+   387b7b6..a8ef400  main -> main
+Enumerating objects: 63, done.
+Counting objects: 100% (63/63), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (56/56), done.
+Writing objects: 100% (63/63), 18.37 KiB | 606.00 KiB/s, done.
+Total 63 (delta 31), reused 15 (delta 4), pack-reused 0
+remote: Resolving deltas: 100% (31/31), done.
+To https://github.com/niyobern/Gym-Git-Exercise-Solution-2.git
+ * [new branch]      main -> main
+
+C:\Users\Bernard\Documents\Gym\git>
+
+```
 
 
